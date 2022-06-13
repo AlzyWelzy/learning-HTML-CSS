@@ -116,6 +116,6 @@ footer p {
   background-color: yellow;
 }
 
-nav {
-  font-size: 5rem;
+.container {
+  text-align: center;
 }
