@@ -30,6 +30,7 @@ button {
   color: azure;
   width: 100%;
   padding: 1rem;
+  border-top: 5px solid black;
 }
 
 button:hover {
