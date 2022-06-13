@@ -7,6 +7,7 @@
 body {
   font-family: sans-serif;
   line-height: 1.6rem;
+  position: relative;
 }
 
 article {
@@ -88,4 +89,57 @@ button:hover {
 .seperator button {
   margin-bottom: 1rem;
   margin-top: 1rem;
+}
+
+.like-button {
+  font-size: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.sale {
+  display: inline-block;
+  position: absolute;
+  top: -8px;
+  right: 1392px;
+  background-color: red;
+  padding: 5px 21px;
+  font-weight: bold;
+  color: white;
+}
+
+.colors {
+  border: 10px solid black;
+  margin: 0 14px 0 0px;
+}
+
+.vibgyor-choice-1 {
+  color: violet;
+}
+
+.vibgyor-choice-2 {
+  color: indigo;
+}
+
+.vibgyor-choice-3 {
+  color: blue;
+}
+
+.vibgyor-choice-4 {
+  color: green;
+}
+
+.vibgyor-choice-5 {
+  color: yellow;
+}
+
+.vibgyor-choice-6 {
+  color: orange;
+}
+
+.vibgyor-choice-7 {
+  color: red;
 }

@@ -1,3 +1,9 @@
+body {
+  border: 10px solid red;
+  background-color: #789bd7;
+  position: relative;
+}
+
 #header-line,
 h2,
 h3,
@@ -63,6 +69,7 @@ footer p {
 
 header {
   background-color: #c0b3b3;
+  position: relative;
 }
 
 aside {
@@ -70,10 +77,6 @@ aside {
   border: 0.5rem solid #00ff00;
   border-left: 0px solid;
   border-right: 0px solid;
-}
-
-body {
-  background-color: #789bd7;
 }
 
 li:first-child {
@@ -117,5 +120,21 @@ footer p {
 }
 
 .container {
+  width: 80%;
   text-align: center;
+  position: relative;
+}
+
+.like-button {
+  font-size: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+h2::after {
+  content: "Top";
+  font-size: 100px;
 }
