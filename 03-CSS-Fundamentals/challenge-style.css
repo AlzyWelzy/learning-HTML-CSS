@@ -1,3 +1,8 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.6rem;
+}
+
 article {
   border: 2px solid black;
 }
@@ -9,10 +14,15 @@ article {
 }
 
 button {
-  border: 7px solid black;
+  border: none;
   background-color: black;
   font-size: 1.5rem;
   color: azure;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
 }
 
 .price,
@@ -27,6 +37,20 @@ button {
 
 .moreInfo,
 .moreDetails {
-  color: blue;
+  /* color: blue; */
+  color: black;
   font-size: 1.5rem;
+  list-style: square;
+}
+
+.moreInfo:hover {
+  text-decoration: none;
+}
+
+.moreInfo:visited {
+  color: blue;
+}
+
+.moreInfo:active {
+  color: blueviolet;
 }
