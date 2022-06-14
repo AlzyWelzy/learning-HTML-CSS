@@ -268,7 +268,20 @@ nav p {
 
 .author-img {
   float: left;
+  margin-bottom: 1rem;
 }
 
 .author {
+  /* padding-left: 4rem; */
+  float: left;
+  padding-top: 0.5rem;
+  margin-left: 2rem;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
 }
