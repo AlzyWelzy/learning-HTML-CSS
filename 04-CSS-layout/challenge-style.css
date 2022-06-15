@@ -36,6 +36,9 @@ body {
   font-weight: bold;
   color: #777;
   margin-bottom: 20px;
+  float: right;
+  float: top;
+  top: 10px;
 }
 
 .sale {
