@@ -143,6 +143,10 @@ body {
   width: 240px;
 }
 
+.clearfix {
+  clear: both;
+}
+
 .clearfix::after {
   clear: both;
   content: "";
