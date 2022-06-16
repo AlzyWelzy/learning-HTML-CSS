@@ -202,7 +202,7 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: inline-block;
 }
 
@@ -271,6 +271,8 @@ nav p {
   font-size: 18px;
 } */
 
+/* 
+
 .author-img {
   float: left;
   margin-bottom: 1rem;
@@ -301,18 +303,47 @@ nav {
 }
 
 article {
-  /* background-color: #1098ad; */
   width: 825px;
   float: left;
 }
 
 aside {
-  /* background-color: red; */
   width: 300px;
   float: right;
 }
 
 footer {
-  /* background-color: yellow; */
   clear: both;
+}
+
+ */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .flex-aside-article {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+} */
+
+.author-box {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin-bottom: 15px;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.related {
+  display: flex;
+  flex-direction: column;
 }
