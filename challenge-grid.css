@@ -93,7 +93,7 @@ body {
 .colors {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  /* gap: 10px; */
+  gap: 10px;
   /* justify-content: space-around; */
 }
 
