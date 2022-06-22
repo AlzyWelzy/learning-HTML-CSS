@@ -81,7 +81,7 @@ img {
 }
 
 .features-title {
-  margin-bottom: 16px;
+  margin-top: 16px;
   font-size: 20px;
 }
 
@@ -91,11 +91,12 @@ img {
 }
 
 /* TESTIMONIAL */
+
 .testimonial-section {
 }
 
 .testimonial-box {
-  grid-column: 2 / -1;
+  grid-column: 2/-1;
   align-self: center;
 }
 
