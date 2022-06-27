@@ -4,136 +4,144 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Omifood Hero Section</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Omnifood Hero Section</title>
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
+
       html {
         font-family: "Rubik", sans-serif;
-        color: #343a40;
-        /* border-bottom: 8px solid #087f5b; */
-        line-height: 1;
+        color: #444;
       }
+
+      .container {
+        margin: 0 auto;
+        width: 1200px;
+      }
+
       header {
-        height: 800px;
-        /* background-image: url(../img/hero-component.jpg); */
-
-        /* Fill this image in the header element  */
-
-        background: url(../img/hero-component.jpg);
-        background-size: cover;
+        /* background-color: orangered; */
+        height: 100vh;
         position: relative;
-      }
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-weight: bolder;
-        font-size: 1.5rem;
-        color: whitesmoke;
-        /* margin-top: 1rem; */
+
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+        color: #fff;
       }
 
-      .header-container{
+      nav {
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 32px;
+        /* background-image: linear-gradient(to right, red, blue); */
+
+        /* background-color: green; */
+      }
+
+      .header-container {
         width: 1200px;
         position: absolute;
-        /*  */
-        left: -50px;
-        top: -v50px;
-        transform:translate();
-/* added to online ayoung */
-        background-color: white;
-      }
-      nav div {
-        margin-top: 3rem;
-        margin-bottom: 5rem;
-f
-      }
-      p.item,
-      h1.item {
-        color: whitesmoke;
-        font-weight: 900;
+
+        /* In relation to PARENT size */
+        left: 50%;
+        top: 50%;
+
+        /* In relation to ELEMENT size */
+        transform: translate(-50%, -50%);
+
+        /* background-color: violet; */
+
+        /* text-align: center; */
       }
 
-      .btn {
-        height: 40px;
-        width: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #f59f00;
-        color: whitesmoke;
-        border-radius: 11px;
+      .header-container-inner {
+        width: 50%;
+        /* background-color: blue; */
+      }
+
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 48px;
+      }
+
+      .btn:link,
+      .btn:visited {
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #e67e22;
+        color: #fff;
         text-decoration: none;
+        display: inline-block;
+        padding: 16px 32px;
+        border-radius: 9px;
+      }
+
+      h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
       }
 
       section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      section h2,
-      section p {
-        font-size: 2.5rem;
-        align-self: flex-start;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        margin-left: 26rem;
-      }
-      section p {
-        /* color: #f59f00; */
-        margin: 0 26rem;
-        font-weight: bold;
-        font-size: 0.9rem;
-        line-height: 1.5rem;
+        padding: 96px 0;
+        background-color: #f7f7f7;
       }
     </style>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="container">
         <div>LOGO</div>
         <div>NAVIGATION</div>
       </nav>
+
       <div class="header-container">
-      <div class="header-conainer">
-        <h1 class="item">
-          A healthy mean delivered to your door, every single day.
-        </h1>
-        <p class="item">
-          The smart 365-days-per-year food subscription that will make you eat
-          healthy again. Tailored to your personal taste and nutritional needs
-        </p>
-        <a href="#" class="item btn">Start Eating Well</a>
+        <div class="header-container-inner">
+          <h1>A healty meal delivered to your door, every single day</h1>
+          <p>
+            The smart 365-days-per-year food subscription that will make you eat
+            healty algain. Tailored to your personal tastes and nutritional
+            needs
+          </p>
+          <a href="#" class="btn">Start eating well</a>
+        </div>
       </div>
     </header>
 
-    .bi
     <section>
-      <h2>Some Random Heading</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-        veritatis quos provident quo fuga maiores aut aliquid debitis. Ipsam
-        tempora minus autem libero accusamus voluptate velit deserunt error
-        adipisci totam quam sed a similique nihil distinctio accusantium cum,
-        facilis sint id pariatur quo iste. Itaque eaque placeat vel, labore
-        porro blanditiis cum? Officiis sequi dolores debitis? Consequatur
-        impedit labore voluptatem doloribus recusandae, repudiandae eum rerum
-        ipsam aliquid. Cum nihil, ipsum nam modi, neque odit at laudantium
-        praesentium provident minus quis eum quia itaque tenetur? Recusandae est
-        at ut vel assumenda quas nisi culpa architecto repellendus vero minus
-        nihil, nemo beatae.
-      </p>
+      <div class="container">
+        <h2>Some random heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quas,
+          minus beatae sapiente debitis voluptatum, laudantium veritatis impedit
+          corrupti officia recusandae fugit, voluptates iure velit! Ad suscipit
+          vitae nobis optio. Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Reiciendis sequi quam earum voluptas eum laboriosam at
+          cupiditate debitis in odio adipisci repudiandae enim ea, sint quos
+          similique! Debitis, facilis dolore?
+        </p>
+      </div>
     </section>
   </body>
 </html>
