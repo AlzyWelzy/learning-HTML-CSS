@@ -47,7 +47,7 @@
         margin-bottom: 5rem;
       }
 
-      .item-collection {
+      . {
         display: flex;
         flex-direction: column;
         /* justify-content: center; */
@@ -103,9 +103,29 @@
       }
     </style> -->
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       html {
         font-family: "Rubik", sans-serif;
         color: #444;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 1200px;
+        /* background-color: red; */
+      }
+
+      header {
+        background-color: orangered;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       nav {
@@ -113,6 +133,7 @@
         font-weight: 700;
         display: flex;
         justify-content: space-between;
+        background-color: green;
       }
 
       h1 {
@@ -145,44 +166,47 @@
 
       section {
         padding: 96px 0;
+        background-color: #f7f7f7;
       }
     </style>
   </head>
 
   <body>
     <header>
-      <nav>
+      <nav class="header container">
         <div>LOGO</div>
         <div>NAVIGATION</div>
       </nav>
 
-      <div class="item-collection">
-        <h1 class="item">
+      <div class="container">
+        <h1 class="">
           A healthy mean delivered to your door, every single day.
         </h1>
-        <p class="item">
+        <p class="">
           The smart 365-days-per-year food subscription that will make you eat
           healthy again. Tailored to your personal taste and nutritional needs
         </p>
-        <a href="#" class="item btn">Start Eating Well</a>
+        <a href="#" class="btn">Start Eating Well</a>
       </div>
     </header>
 
     <section>
-      <h2>Some Random Heading</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-        veritatis quos provident quo fuga maiores aut aliquid debitis. Ipsam
-        tempora minus autem libero accusamus voluptate velit deserunt error
-        adipisci totam quam sed a similique nihil distinctio accusantium cum,
-        facilis sint id pariatur quo iste. Itaque eaque placeat vel, labore
-        porro blanditiis cum? Officiis sequi dolores debitis? Consequatur
-        impedit labore voluptatem doloribus recusandae, repudiandae eum rerum
-        ipsam aliquid. Cum nihil, ipsum nam modi, neque odit at laudantium
-        praesentium provident minus quis eum quia itaque tenetur? Recusandae est
-        at ut vel assumenda quas nisi culpa architecto repellendus vero minus
-        nihil, nemo beatae.
-      </p>
+      <div class="container">
+        <h2>Some Random Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          veritatis quos provident quo fuga maiores aut aliquid debitis. Ipsam
+          tempora minus autem libero accusamus voluptate velit deserunt error
+          adipisci totam quam sed a similique nihil distinctio accusantium cum,
+          facilis sint id pariatur quo iste. Itaque eaque placeat vel, labore
+          porro blanditiis cum? Officiis sequi dolores debitis? Consequatur
+          impedit labore voluptatem doloribus recusandae, repudiandae eum rerum
+          ipsam aliquid. Cum nihil, ipsum nam modi, neque odit at laudantium
+          praesentium provident minus quis eum quia itaque tenetur? Recusandae
+          est at ut vel assumenda quas nisi culpa architecto repellendus vero
+          minus nihil, nemo beatae.
+        </p>
+      </div>
     </section>
   </body>
 </html>
