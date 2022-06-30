@@ -61,6 +61,30 @@ body {
 /* General Reusable Components */
 /* ************** */
 
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
@@ -73,9 +97,6 @@ body {
 .btn:link,
 .btn:visited {
   display: inline-block;
-
-  /* background-color: #e67e22; 
-  color: #fff; */ /* not using but used for learning purposes */
 
   text-decoration: none;
   font-size: 2rem;
@@ -91,14 +112,11 @@ body {
 .btn--full:visited {
   background-color: #e67e22;
   color: #fff;
-  /* margin-right: 1.6rem; for testing */
 }
 
 .btn--full:hover,
 .btn--full:active {
   background-color: #cf711f;
-  /* color: #555; */
-  /* background-color: red; only for testing */
 }
 
 .btn--outline:link,
@@ -110,9 +128,6 @@ body {
 .btn--outline:hover,
 .btn--outline:active {
   background-color: #fdf2e9;
-
-  /* color: #555; */
-  /* border: 3px solid #fff; */
 
   /* Trick to add border inside */
 
@@ -237,4 +252,13 @@ body {
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+
+/* ************** */
+/* Hero Sections */
+/* ************** */
+
+.section-how {
+  padding: 9.6rem 0;
+  background-color: orangered;
 }
