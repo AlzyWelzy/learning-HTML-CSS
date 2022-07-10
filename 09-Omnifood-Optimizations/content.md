@@ -85,7 +85,7 @@ Starter: $399 per month
 
 Complete: $649 per month
 
-- 2 meal2 per day
+- 2 meal per day
 - Order 24/7
 - Delivery is free
 - Get access to latest recipes
@@ -107,9 +107,9 @@ I got Omnifood for the whole family, and it frees up so much time! Plus, everyth
 
 ### Contact information
 
-Address: 623 Harrison St., 2nd Floor, San Francisco, CA 94107
-Phone: 415-201-6370
-Email: hello@omnifood.com
+Address: 943,lakshminvs,11thmn Hal 2stg Bl-8, Hal
+Phone: 666-777-8888
+Email: welzyalzy@gmail.com
 
 Social profiles: instagram, facebook, twitter [links to them not available yet]
 
@@ -131,14 +131,14 @@ Privacy & terms
 
 ######
 
-## Sections
+### Sections
 
-- Logo + Navigation
+- Logo +Navigation
 - Hero
 - Featured in
-- How it works
+- How it works?
 - Meals (and list of diets)
-- Testimonials + gallery
-- Pricing + features
+- Testimonials + Gallery
+- Pricing + Features
 - CTA
 - Footer
