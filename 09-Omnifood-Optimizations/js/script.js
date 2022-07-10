@@ -26,6 +26,96 @@ btnNavEl.addEventListener("click", function () {
 });
 
 ///////////////////////////////////////////////////////////
+// Smooth Scrolling Animations
+
+// const allLinks = document.querySelectorAll("a:link");
+// console.log(allLinks);
+
+// allLinks.forEach(function (link) {
+//   link.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     const target = this.getAttribute("href");
+//     const targetPosition = document.querySelector(target).offsetTop;
+//     window.scrollTo({
+//       top: targetPosition,
+//       behavior: "smooth",
+//     });
+//   });
+// });
+
+const allLinks = document.querySelectorAll("a:link");
+
+// allLinks.forEach(function (link) {
+//   link.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     const target = this.getAttribute("href");
+//     const targetPosition = document.querySelector(target).offsetTop;
+//     window.scrollTo({
+//       top: targetPosition,
+//       behavior: "smooth",
+//     });
+//   });
+// });
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = this.getAttribute("href");
+
+    // Scroll to top
+    // Event caused by logo click
+    if (href === "#") {
+      // const target = this.getAttribute("href");
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    // Scroll to link/Section
+    // Event caused by link click
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionlEl = document.querySelector(href);
+      // console.log(sectionlEl);
+      sectionlEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Close mobile navigation
+    if (link.classList.contains("main-nav-link")) {
+      headerEl.classList.toggle("nav-open");
+    }
+  });
+});
+
+///////////////////////////////////////////////////////////
+// Sticky Navigation
+///////////////////////////////////////////////////////////
+
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+
+observer.observe(sectionHeroEl);
+
+///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
   var flex = document.createElement("div");
