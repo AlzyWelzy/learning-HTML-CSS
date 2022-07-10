@@ -254,6 +254,31 @@
     height: 1.2rem;
   }
 
+  /* Just checking */
+
+  /* logos img {
+    height: 1.6rem;
+    justify-self: center;
+    grid-column: span 1;
+  }
+
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    row-gap: 0.1rem;
+  }
+
+  .logos img:nth-child(4) {
+    grid-column: 2 /4;
+  }
+  .logos img:nth-child(5) {
+    grid-column: 4 /6;
+  } */
+
+  /* Just Checking */
+
   .step-img-box:nth-child(2) {
     grid-row: 1;
   }
